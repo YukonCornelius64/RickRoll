@@ -13,29 +13,18 @@
       <script>
          // Change the variables below to your liking
          const currentURL = "RickRoll.mp4";
-         const pageTitle = "Onlyfans1";
+         const pageTitle = "Onlyfans";
          // End of changable variables
          
          function setTitle() {
             document.title = pageTitle;
+            document.getElementById(RickRoll).play();
          }
          
          function redirect() {
             window.location.href = currentURL;
          }
          
-         function toggleMute() {
-
-            var video=document.getElementById("RickRoll");
-            
-            if(video.muted){
-               video.muted = false;
-            } else {
-               video.muted = true;
-            }
-
-         }
-
          function onload() {
             setTitle();
             redirect();
@@ -43,7 +32,6 @@
          
          window.onload = onload();
 
-         window.toggleMute();
        </script>
        
    </body>
