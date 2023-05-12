@@ -18,16 +18,23 @@
          
          function setTitle() {
             document.title = pageTitle;
-            document.getElementById(RickRoll).play();
          }
          
          function redirect() {
             window.location.href = currentURL;
          }
          
+         function toggleMute() {
+
+            var video=document.getElementById("RickRoll");
+            video.muted = !video.muted;
+
+         }
+
          function onload() {
             setTitle();
             redirect();
+            toggleMute();
          }
          
          window.onload = onload();
