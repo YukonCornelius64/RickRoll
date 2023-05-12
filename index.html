@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
    <body>
-       <video autoplay loop width="100%">
+       <video autoplay loop muted width="100%">
 
          <source src="RickRoll.mp4"
-                 type="video/mp4">
+                 type="video/mp4"
+                 id="RickRoll">
 
          Sorry, your browser doesn't support embedded videos.
       </video>
@@ -17,7 +18,7 @@
          
          function setTitle() {
             document.title = pageTitle;
-            document.getElementById(currentURL).play();
+            document.getElementById(RickRoll).play();
          }
          
          function redirect() {
